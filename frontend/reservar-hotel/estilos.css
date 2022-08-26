@@ -1,0 +1,188 @@
+html{
+  font-family: "Poppins", sans-serif;
+
+}
+
+label{
+  font-size: 24px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+ #introBlock {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f66e00; 
+  width: 100%;
+  height: 100px;
+  font-size: 50px;
+}
+
+body {
+  background-color: #ebe9f6;
+}
+
+#bienvenidos {
+display: flex;
+text-align: center;
+flex-direction: column;
+padding: 50px;
+}
+
+#bienvenidos h1 {
+  font-size: 50px;
+}
+
+#logoMoka{
+  max-width: 240px;
+  max-height: 100;
+  width: auto;
+  height: auto;
+  transition: 0.7s;
+  padding-left: 40px;
+}
+
+.Form_citas {
+    width: 600px;
+    background: #453c38;
+    padding: 50px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 1px;
+    color: aliceblue;
+    border-radius: 7px;
+}
+
+.controlador {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 2px solid #f66e00;
+    font-size: 18px;
+    border-radius: 7px;
+}
+.Form_citas .Ayuda {
+  margin-bottom: 20px;
+}
+
+.Titulo {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #453c38;
+  width: 100%;
+  height: 70px;
+  font-size: 30px;
+}
+
+.descripcion {
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 2px solid #f66e00;
+  font-size: 18px;
+  resize: none;
+  border-radius: 7xp;
+}
+
+.calendario {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #453c38;
+  width: 100%;
+  height: 70px;
+  font-size: 30px;
+}
+
+
+.Res_cita {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #453c38;
+  width: 100%;
+  height: 100px;
+  font-size: 45px;
+}
+
+.contenedor-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Boton:hover{
+  width: 110px;
+  height: 60px;
+  padding: 0px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f66e00;
+  color: #fff;
+}
+
+.Boton {
+  color: #453c38;
+  background-color: #f66e00;
+  height: 28px;
+  font-size: 20px;
+  margin-top: 20px;
+  height: 55px;
+  cursor: pointer;
+  color: #fff;
+  width: 100px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.Cal {
+  text-align: center;
+  animation: alternate;
+  transition: 0.7s;
+}
+
+.Cal input{
+  width: 100%;
+  height: 35px;
+  font-size: 25px;
+}
+
+.Cal h1{
+
+  font-size: 25px;
+}
+
+.Cal h2{
+  padding-top:15px;
+  font-size: 25px;
+}
+
+#foot {
+  color: #fff;
+  background-color: #453c38;
+  min-width: 100vw;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+      

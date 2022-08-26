@@ -1,0 +1,97 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body {font-family: 'Poppins', sans-serif;}
+p { line-height: 25px; }
+
+/* Global */
+#increasingButton { position: fixed; width: 100px; font-size: 16px; background: -webkit-linear-gradient(#EB0203, #FF7B0B); color: #D9D9D9; font-weight: 700; border: none; border-radius: 10px; padding: 5px 0; cursor: pointer; transition: 0.5s;}
+#increasingButton:hover { opacity: 0.5; }
+.increasing-font { font-size: 1.5em !important;  }
+
+/* Header */
+.astra-header-container { position: relative; max-width: 1440px; background-color: #D4C0A5; height: 500px; margin: 0 auto; clip-path: ellipse(50% 100% at 50% 0%); }
+.astra-header-container div { max-width: 1298px; margin: 0 auto; padding: 65px 0 0; text-align: center;}
+.astra-header-container ul { display: flex; box-sizing: border-box; margin: 0 20px; font-size: 24px;}
+.astra-header-container ul li { margin-right: 30px;} 
+.astra-header-container ul li:nth-child(1) { max-width: 742px; padding-right: 0%; flex-grow: 1; text-align: left;}
+.astra-header-container img { width: 250px; border-radius: 50%; margin: 50px auto 0; }
+.astra-header-container ul li a {transition: 0.7s ease 0s; color: #222222; text-decoration: none; }
+.astra-header-container ul li a:hover {color: #ee1010;}
+
+/* Our Team section */
+.astra-our-team { max-width: 1440px; margin: 55px auto 0; padding: 0 20px; box-sizing: border-box;}
+.astra-our-team h2 { text-align: center; font-size: 52px; transition: 0.7s;}
+.astra-our-team h2:hover {font-size: 62px; font-weight: 900; background: -webkit-linear-gradient(#EB0203, #FF7B0B); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+.astra-our-team .astra-ot-items-flex { display: flex; flex-direction: column; margin: 30px 0; }
+.astra-our-team .astra-ot-items-flex .astra-ot-item { max-width: 882px; margin: 20px 0;  display: flex; gap: 60px; transition: 0.7s; }
+.astra-our-team .astra-ot-items-flex .astra-ot-item:hover {  background-color: #eaeaea;  padding: 10px; border-radius: 25px;}
+.astra-our-team .astra-ot-items-flex .astra-ot-item img {max-width: 200px; width: auto; height: auto; max-height: 200px; border-radius: 50%;}
+.astra-our-team .astra-ot-items-flex .astra-ot-item:nth-child(2),
+.astra-our-team .astra-ot-items-flex .astra-ot-item:nth-child(4){ align-self: end;}
+.astra-our-team .astra-ot-items-flex h3 { font-size: 32px; font-weight: bold; margin: 10px 0; }
+.astra-our-team .astra-ot-items-flex p { font-size: 20px; font-weight: normal; margin: 10px 0;}
+
+/* 3 Cards */
+.astra-cards-container { max-width: 1440px; margin: 40px auto; display: flex; gap: 65px; justify-content: center;  box-sizing: border-box; padding: 0 20px;}
+.astra-cards-container div { width: 400px; min-height: 400px; background-color: #eaeaea; border-radius: 20px; text-align: center; padding: 40px 10px; box-sizing: border-box; transition: 0.7s;} 
+.astra-cards-container div:hover {background-color: #D9D9D9;}
+.astra-cards-container div h3 { margin: 0 0 20px 0; font-size: 19px; font-weight: 700px; }
+
+/* Project section */
+.astra-project-container { max-width: 1440px; box-sizing: border-box; min-height: 400px; margin: 20px auto; padding: 0 20px; background-color: #efefef78; text-align: center; }
+.astra-project-container:hover {font-size: larger; background-color: #222222; transition: 0.7s; color: #fff;}
+.astra-project-container h2 { font-size: 36px; padding: 5% 0 0 0 }
+.astra-project-container p { max-width: 900px; margin: 4% auto;  }
+.astra-project-container div { max-width: 160px; height: 55px; font-size: 20px; background-color: #eaeaea; border-radius: 20px; margin: 0 auto; transition: 0.7s;  padding: 17px 0 0 0; box-sizing: border-box; }
+.astra-project-container div:hover { font-size: 26px;  background: -webkit-linear-gradient(#EB0203, #FF7B0B); background-clip: border-box; -webkit-background-clip: border-box; -webkit-text-fill-color: #fff; cursor: pointer;} 
+.astra-project-container a {text-decoration: none;  color: #000;}
+
+/* 2 Cards */
+.astra-two-cards-container { max-width: 1480px; margin: 40px auto; padding: 0 20px;box-sizing: border-box; display: flex; gap: 50px; justify-content: center; }
+.astra-two-cards-container div { width: 100%; min-height: 700px; background: #ebebeb; border-radius: 20px; text-align: center;  padding: 0 30px; box-sizing: border-box; }
+.astra-two-cards-container .form { display: flex; flex-direction: column; }
+.astra-two-cards-container div h4 { margin: 70px 0 20px 0;  font-size: 44px;}
+.astra-two-cards-container div input { margin: 0 0 16px 0; padding: 10px; border-radius: 5px; margin-bottom: 16px; border: 2px solid black; font-size: 24px; background-color: transparent;}
+.astra-two-cards-container div textarea{ min-height: 300px; border-radius: 5px; background-color: transparent;margin-bottom: 16px; border: 2px solid black; font-size: 24px;padding: 10px 0 10px 10px; font-family: 'Poppins','sans-serif';}
+.astra-two-cards-container div input.boton { width: 135px; height: 45px; background: #000; border: none;  padding: 12px;  color: white; font-size: 18px; cursor: pointer; border-radius: 20px; margin: 0 auto; transition: 0.9s; }  
+.astra-two-cards-container div input.boton:hover { background: -webkit-linear-gradient(#EB0203, #FF7B0B);  }
+.astra-two-cards-container .contact-us { display: flex; flex-direction: column;}
+.astra-two-cards-container .contact-us .social-icons { margin: 60px 0; }
+.astra-two-cards-container .contact-us .social-icons img { width: 75px; height: 75px;  margin: 0 10px; }
+.astra-two-cards-container .contact-us h5 { font-size: 40px; font-weight: 400; margin: 30px 0; }
+.astra-two-cards-container .contact-us p { font-size: 16px; margin: 15px 0 0 0;}
+
+/* Footer */
+footer {  background-color: #ebebeb; margin: 100px 0; height: 100px; text-align: center; box-sizing: border-box; position: relative;} 
+footer div { position: absolute; top: 50%; left: 0; right: 0;}
+
+/* Mobile view */
+@media (max-width: 700px) {
+       /* Header */
+    .astra-header-container { height: 250px; clip-path: ellipse(70% 100% at 50% 0%);}
+    .astra-header-container div { padding: 30px 0 0; }
+    .astra-header-container ul { font-size: 0.6rem; }
+    .astra-header-container img {width: 100px;}
+
+    /* Our Team section */
+    .astra-our-team h2 {font-size: 32px;}
+    .astra-our-team h2:hover { font-size: 40px; }
+    .astra-our-team .astra-ot-items-flex .astra-ot-item img { width: 100px; height: 100px; }
+    .astra-our-team .astra-ot-items-flex .astra-ot-item { align-items: center; margin: 20px; flex-direction: column; align-items: center; }
+    .astra-our-team .astra-ot-items-flex h3 { font-size: 16px; }
+    .astra-our-team .astra-ot-items-flex p { font-size: 12px; }
+
+    /* Cards */
+    .astra-cards-container { flex-direction: column; align-items: center; }
+    .astra-cards-container div { width: 100%; }
+
+    /* 2 Cards */
+    .astra-two-cards-container { flex-direction: column; gap: 50px; }
+    .astra-two-cards-container div { min-height: 520px; }
+    .astra-two-cards-container div h4 {font-size: 24px; margin: 30px 0 10px 0; }
+    .astra-two-cards-container div input {font-size: 12px;}
+    .astra-two-cards-container div input:nth-child(4) { min-height: 150px; }
+    .astra-two-cards-container .contact-us h5 { font-size: 20px; margin: 15px 0;}
+    .astra-two-cards-container .contact-us p { font-size: 12px; }
+    .astra-two-cards-container .contact-us .social-icons { margin: 25px 0; }
+}

@@ -1,0 +1,101 @@
+*{
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebe9f6;
+
+}
+
+.cont-formulario{
+    background-color: #453c38;
+    height: 600px;
+    width: 1000px;
+    padding: 50px;
+    margin-top: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.cont-formulario h1{
+    font-size: 52px;
+    text-align: center;
+    color: #fff;
+    margin: 0px 0px 40px 0px;
+    transition: 0.7s;
+
+}
+
+.cont-formulario h1:hover{
+    font-size: 56px;
+
+}
+
+#formulario-pago{
+    background-color: #fff;
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+    gap: 10px;
+}
+
+.expiracion{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.caja-input{
+    font-size: 18px;
+    width: 600px;
+    padding: 7px;
+
+}
+
+.input-expiracion{
+    width: 200px;
+    padding: 5px;
+}
+
+.boton-submit{
+    color: #fff;
+    font-size: 18px;
+    width: 200px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #453c38;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.boton-submit:hover{
+    padding: 4px;
+    font-size: 20px;
+    background-color: #f66e00;
+    color: #fff;
+
+}
+
+.error{
+    border: 2px solid red;
+
+}

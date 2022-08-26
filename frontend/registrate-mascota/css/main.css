@@ -1,0 +1,107 @@
+body {
+  color: #C0C0C0;
+  font-family: Arial, san-serif;
+  background: linear-gradient( to right, #88859e, #EBE9F6);  
+}
+
+/* Estilos del formulario */
+h1 {
+  margin: 10px 0 0 0;
+  color: white; 
+  text-align: center;
+  font-size: 55px;
+} 
+
+img{ 
+  height: 200px;
+  width: 250px;
+  margin: 15px auto 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+#header-form{
+  background-color: #453C38 ;
+  padding: 10px 0 10px 0;
+  margin-bottom: 10px;
+  border-radius:7px;
+}
+
+#contact-form {
+  background-color: #6A5C55;
+  padding: 0px 0px 20px 0px;
+  max-width:100%;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top:30px;
+  margin-left: -260px;
+  border-radius:7px;
+}
+
+#contact-form input,
+#contact-form textarea,   
+#contact-form label { 
+  font-size: 15px;  
+  margin-bottom: 2px;
+  font-family: Arial, san-serif;
+  margin: 10px 20px 15px 20px;
+}
+
+#txttipo{
+  width: 92%;
+  margin: 10px 20px 15px 20px;
+  height: 35px;
+  font-size: 15px;
+
+}
+
+#contact-form input, 
+#contact-form textarea { 
+  width:90%;
+  background: white;
+  -moz-border-radius: 4px;  
+  -webkit-border-radius: 4px;  
+  border-radius: 4px;
+  padding: 5px;  
+}
+
+input select{
+ border: 0;
+ border: solid 1px #000; ;
+} 
+
+#contact-form textarea {
+  width:90%;
+  height: 150px;
+} 
+#contact-form button {
+  cursor:pointer;
+  width: 80%;
+  border:none;
+  background:#453C38;
+  color:white;
+  font-weight: bold;
+  font-size: 15px;
+  padding:12px;
+  border-radius:5px;
+  transition: 0.7s;
+  margin-left: 55px;
+}
+#contact-form button:hover {
+  background-color: #FFE5B4;
+  color: black;
+  font-size: 15px;
+}
+
+#contact-form .form-label {  
+  font-weight:bold;  
+  color: #E5E6E7;      
+}
+
+
+.error{
+ border: 3px solid red;
+}
+

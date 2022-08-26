@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion cita</title>
+    <link rel="stylesheet" href="resets.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<header>
+    <div id="introBlock">
+        <img src="Assets/Artboard 6.png" alt="Logo de la Veterinaria Moka" height="200" id="logoMoka">
+        <div id="bienvenidos">
+        <h1>Bienvenidos</h1>
+        </div>
+    </div>
+</header>
+
+<body>
+    <form>
+    <div class="Res_cita">
+        <h1 id="cita">Registre informacion de cita</h1>
+    </div>
+    <section class="Form_citas">
+        <label class="Titulo">Nombre de la mascota</label>
+        <input class="controlador" type="text" name="nombre" id="nombres" placeholder="Nombre de la mascota" pattern="[A-Za-z_ ]{0,}" required>
+        <label class="Titulo">Nombre del doctor</label>
+        <input class="controlador" type="text" name="nombre" id="nombres" placeholder="Nombre del doctor" pattern="[A-Za-z_ ]{0,}" required>
+            <h3 class="Titulo">Calificación</h3>
+
+      <select class="controlador" name="calificacion" id="calificacion">
+
+        <required>
+          <option value="perro">1 estrellas</option>
+          <option value="gato">2 estrellas</option>
+          <option value="conejo">3 estrellas</option>
+          <option value="hamster">4 estrellas</option>
+          <option value="perro">5 estrellas</option>
+        </required>
+        </select>
+        <div class="calendario">
+        </div>
+        <div class="Cal">
+            <h1>Fecha de ingreso</h1>
+            <input type="date" >
+            <h2>Fecha de salida</h2>
+            <input type="date">
+        </div>
+        <label class="Titulo">Descripción</label>
+        <textarea class="descripcion" name="text" id="descripcion" id="descripcion" placeholder="Ingrese una descripción" required></textarea>
+        <div class="contenedor-boton"><input class="Boton" type="submit" name="Boton" id="Boton" placeholder="Enviar"></div>
+    </form>
+    </section>
+    <footer>
+        <div id="foot">
+        <h6>© Veterinaria Moka 2022 - Todos los derechos reservados.</h6>
+        </div>  
+    
+    </footer>
+
+</body>
+</html>

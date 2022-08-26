@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  <link href="main.css" rel="stylesheet" />
+  <title>Pagina de Usuario</title>
+</head>
+ 
+<body>
+
+  <div id="encabezado">
+    
+    <h1>¡Hola cliente! </h1>    
+  </div>
+
+  <div id="cita-reservar">
+    <div id="cita-reservar-2">
+      <p>¿Necesitas una cita?</p>
+      <button id="boton-agenda">Agenda una cita</button>
+      <p>¿Te vas de viaje?</p>
+      <button>Reserva una habitación</button>      
+      <img src="images/logo moka blanco-01-02.png" width="100px" height="100px" alt="">   
+    </div>
+
+  </div>
+      <!-- Seccion mascotas datos -->
+  <div style="width: 100%;margin-top:20px;text-align:center">
+    <a href="../registrate-mascota/index.html" class="button">Registra tu mascota</a>
+    <a href="../modulo-pago/forma-pago.html" class="button">Añade metodo de pago</a>
+  </div>
+
+  <section id="mascotas-datos">
+    <h3>Datos de mascotas</h3>
+      <table id="mascotas-datos-tabla">
+        <thead>
+          <tr>
+            <th>Nombre mascota</th>
+            <th>Alergias</th>
+            <th>Cuidados</th>
+            <th>Fecha de nacimiento</th>
+            <th>Dirección</th>
+  
+            </tr>
+            </thead>
+          <tbody >
+          </tbody>
+      </table> 
+  </section>
+
+        <!-- Seccion historial pagos -->
+
+  <section id="pagos">
+    <h3 id="titulo-pagos">Métodos de pago</h3>
+      <table id="tabla-metodos">
+        <thead>
+          <tr>
+            <th>Nombre del titular</th>
+              <th>Número de tarjeta</th>              
+              <th>Fecha de expiración</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+  </section>
+
+          <!-- Seccion historial reservaciones -->
+
+  <section id="historial-citas">
+    <h3>Historial de reservaciones</h3>
+      <table id="informacion-registro">
+        <thead>
+          <tr>
+            <th>Nombre mascota</th>
+              <th>Tipo de animal</th>
+                        <th>Numero telefono</th>
+                        <th>Fecha de entrada</th>
+                        <th>Fecha de salida</th>
+                        <th>Cuidados Especiales</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table> 
+  </section>
+
+    </div>
+    
+    <section id="info-cliente">
+      <h2 id="titulo-informacion">Información del cliente</h2>
+      <div id="cuerpo-info-cliente"> 
+          <div>
+              <h3>Nombre Completo:</h3>
+              <p id="userName"> Mauricio Fernandez</p>
+          </div>
+          <div>
+              <h3>Identificacion:</h3>
+              <p id="userIdentification"> 70460003</p>
+          </div>
+          <div>
+              <h3>Correo electrónico:</h3>
+              <p id="userEmail"> mfernandeza@ucenfotec.ac.cr</p>
+          </div>
+          <div>
+              <h3>Cantidad de mascotas:</h3>
+              <p id="userPets"> 0</p>
+          </div>
+          <div>
+              <h3>Dirección exacta:</h3>
+              <p id="userAddress">Lorem ipsum dolor, sit um minima, ea eos non, ex nobis officiis provident, exercitationem assumenda? </p>
+          </div>
+      </div>
+
+</section>
+
+<footer>
+  <div id="doctor-footer">© Astra 2022 - Todos los derechos reservados.</div> 
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>    
+  <script src="main.js"></script>
+</body>
+
+
+
+</html>

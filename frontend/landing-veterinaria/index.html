@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Moka</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/ea7c845350.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="./mapa-google.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer
+    ></script>
+
+</head>
+<header>
+
+    <img src="Assets/Artboard 6.png" alt="Logo horizontal de la Veterinaria Moka" href="index.html" id="logoHome">
+    <div id="loginContainer">
+        <a href="../inicio-sesion/inicio-Sesion.html"><input id="log-in" type="button" value="LOG IN">  </a>
+        <a href="../registrate_usuario/index.html"><input id="sign-up" type="button" value="SIGN UP"> </a>
+
+    </div>
+
+</header>
+
+<body>
+    
+    <div id="textoIntro" class="intro-box">
+        <h1>¡Hola!</h1>
+        <h2>En Veterinaria Moka nos esforzamos por darle el mejor cuidado a su mascota, por su salud y bienestar. <br><br>Ofrecemos servicios profesionales veterinarios clínicos, de prevención y cuido para tu mejor amigo animal.</h2>
+    </div>
+
+
+    <!-- block de intro -->
+    <div id="introBlock">
+        <div id="logoLockup">
+            <img src="Assets/logo moka blanco-01-02.png" alt="Logo de la Veterinaria Moka" height="400" id="logoMoka" href="index.html">
+            <p>Velando por tu mejor amigo desde 2010</p>
+        </div>
+        <a href="../registrate_usuario/index.html"><input id="registrate-boton" type="button" value="¡Regístrate aquí!"></a>
+    </div>
+
+    <!-- block de doctores -->
+
+    <div id="nuestrosPros">
+        <h2>Conoce a algunos de nuestros profesionales:</h2>
+
+        <div class="row">
+            <img src="Assets/Artboard 2.png" alt="Imagen de perfil del doctor Daniel Bolaños" width="200">
+            <div class="textoDocs">
+                <h3>Doctor Daniel Bolaños</h3>
+                <h5>Graduado de la Universidad Nacional y con 8 años de experiencia en el campo veterinario, el doctor Bolaños es un experto en el trato de animales exóticos.</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <img src="Assets/Artboard 2.png" alt="Imagen de perfil del primero doctor" width="200">
+            <div class="textoDocs">
+                <h3>Doctor Jonathan Mendez</h3>
+                <h5>Con una especialización en el cuido y tratamiento de equinos, el doctor Méndez ha tratado con una variedad de casos a través de su carrera, tanto en el ámbito nacional como internacional.</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <img src="Assets/Artboard 2.png" alt="Imagen de perfil del primero doctor" width="200">
+            <div class="textoDocs">
+                <h3>Doctor Francisco Torres</h3>
+                <h5>El doctor Torres tiene una especialización obtenida en Argentina en el cuido de animales pequeños domésticos. Junto con 9 años de experiencia en el campo, lo hacen de los doctores mas experimentados en su área.</h5>
+            </div>
+        </div>
+
+    </div>
+
+ <!-- bloque de reseñas -->
+
+    <div id="bloqueTestRes">
+        <div id="contenedorCont">
+        <h2>Testimonios y Reseñas</h2>
+            <div id="tiles">
+                <div class="testimonios">
+                    <h4>Muy buen servicio</h4>
+                        <div class="estrella">
+                            <i class="fas fa-star fa-3x" id="one"></i>
+                            <i class="fas fa-star fa-3x" id="two"></i>
+                            <i class="fas fa-star fa-3x" id="three"></i>
+                            <i class="fas fa-star fa-3x" id="four"></i>
+                            <i class="fas fa-star fa-3x" id="five"></i>
+                         </div>
+                </div>
+
+                <div class="testimonios2">
+                    <h4>La mejor veterinaria</h4>
+                        <div class="estrella2">
+                            <i class="fas fa-star fa-3x" id="one"></i>
+                            <i class="fas fa-star fa-3x" id="two"></i>
+                            <i class="fas fa-star fa-3x" id="three"></i>
+                            <i class="fas fa-star fa-3x" id="four"></i>
+                            <i class="fas fa-star fa-3x" id="five"></i>
+                         </div>
+                </div>
+
+                <div class="testimonios3">
+                    <h4>Volvería otra vez</h4>
+                        <div class="estrella3">
+                            <i class="fas fa-star fa-3x" id="one"></i>
+                            <i class="fas fa-star fa-3x" id="two"></i>
+                            <i class="fas fa-star fa-3x" id="three"></i>
+                            <i class="fas fa-star fa-3x" id="four"></i>
+                            <i class="fas fa-star fa-3x" id="five"></i>
+                         </div>
+                </div>
+
+                <div class="testimonios4">
+                    <h4>¡Excelente!</h4>
+                        <div class="estrella4">
+                            <i class="fas fa-star fa-3x" id="one"></i>
+                            <i class="fas fa-star fa-3x" id="two"></i>
+                            <i class="fas fa-star fa-3x" id="three"></i>
+                            <i class="fas fa-star fa-3x" id="four"></i>
+                            <i class="fas fa-star fa-3x" id="five"></i>
+                         </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--script para estrellas-->
+    <script>
+        const estrella = document.querySelectorAll('.estrella i');
+        const testimonios = document.querySelector('.testimonios');
+
+        estrella.forEach(function (star) {
+            star.addEventListener('click', function()   {
+                testimonios.className = `testimonios ${this.id}`
+
+            })
+
+        });
+
+        const estrella2 = document.querySelectorAll('.estrella2 i');
+        const testimonios2 = document.querySelector('.testimonios2');
+
+        estrella2.forEach(function (star) {
+            star.addEventListener('click', function()   {
+                testimonios2.className = `testimonios2 ${this.id}`
+
+            })
+
+        });
+
+        const estrella3 = document.querySelectorAll('.estrella3 i');
+        const testimonios3 = document.querySelector('.testimonios3');
+
+        estrella3.forEach(function (star) {
+            star.addEventListener('click', function()   {
+                testimonios3.className = `testimonios3 ${this.id}`
+
+            })
+
+        });
+
+        const estrella4 = document.querySelectorAll('.estrella4 i');
+        const testimonios4 = document.querySelector('.testimonios4');
+
+        estrella4.forEach(function (star) {
+            star.addEventListener('click', function()   {
+                testimonios4.className = `testimonios4 ${this.id}`
+
+            })
+
+        });
+
+    </script>
+
+
+    <!-- bloque de mapa -->
+
+    <div id="bloqueMapa">
+        <div id="textoMapa">
+            <h2>¡Visítanos!</h2>
+            <h3>Estamos a un clic de distancia.</h3>
+        </div>
+
+        <div id="contMapa" alt="Esta sección contiene un mapa que dirige a la Veterinaria Moka">
+         <div id="map"></div>
+        </div>
+    
+    </div>
+
+
+    <div class="Formulario_contac">
+        <h4>Formulario de contacto</h4>
+        <input class="controlador" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo">
+        <input class="controlador" type="email" name="nombre" id="nombre" placeholder="Ingrese su correo electrónico">
+        <textarea class="consultas" type="text" name="nombre" id="nombre" placeholder="Ingrese sus consultas o solicitudes"></textarea>
+        <input class="boton" type="button" value="Enviar" href="#">
+        </div>
+    
+</body>
+
+<footer>
+    <div id="foot">
+    <h6>© Veterinaria Moka 2022 - Todos los derechos reservados.</h6>
+    </div>  
+
+</footer>
+
+</html>

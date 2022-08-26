@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Registro de Admin</title>
+</head>
+
+<body> 
+
+<div id="contact-form">
+    <div id="header-form">
+        <h1>¡Registrate Admin!</h1> 
+        <img src="images/v433_2.png" alt="">
+    </div> 
+    
+            <form action="" id="formulario_registro">
+            <div>
+                <label for="txtnombre" class="form-label">Ingrese su nombre completo:</label> 
+                <input type="text" class="input-text"  placeholder="Mauricio Fernandez" id="txtnombre" required />
+            </div>
+    
+            <div>
+                <label for="txtcorreo" class="form-label">Ingrese su correo electrónico:</label>
+                <input type="text" class="input-text" placeholder="mauricio@cenfotec.com" id="txtcorreo" required />
+            </div>
+    
+            <div>             
+                <label for="txtcontra" class="form-label">Ingrese la contraseña:</label>
+                <input type="password" class="input-text" placeholder="********" id="txtcontra" required />
+            </div>
+
+            <div>             
+                <label for="txtcontra2" class="form-label">Ingrese la contraseña nuevamente:</label>
+                <input type="password" class="input-text" placeholder="********" id="txtcontra2" required />
+            </div>
+
+            <div>             
+                <label for="txtcedula" class="form-label">Ingrese su número de cédula :</label>
+                <input type="number" class="input-text" placeholder="X-XXXX-XXXX" id="txtcedula" required />
+            </div>
+
+            <div>             
+                <label for="txtfecha" class="form-label">Ingrese su fecha de nacimiento:</label>
+                <input type="date" class="input-text" id="txtfecha" min="1902-08-29" max="2027-12-31" required />
+            </div>
+
+            <div>             
+                <label for="txtdireccion" class="form-label">Ingrese su dirección exacta:</label>
+                <textarea class="input-text" placeholder="Av Central, Francisco Peralta, San José, 10104, Costa Rica." id="txtdireccion" required></textarea> 
+            </div>
+
+            <div>              
+                <button name="button" type="submit" id="btn-registrar" >REGISTRARSE</button> 
+            </div>
+
+            </form>
+      
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="js/controlador.js"></script>
+<body> 
+
+
+</html>    
+             

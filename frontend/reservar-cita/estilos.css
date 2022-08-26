@@ -1,0 +1,156 @@
+html{
+  font-family: "Poppins", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ #introBlock {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f66e00;
+  width: 100%;
+  height: 100px;
+  font-size: 50px;
+}
+
+body {
+  background-color: #ebe9f6;
+}
+
+#bienvenidos {
+display: flex;
+text-align: center;
+flex-direction: column; 
+padding: 50px;
+}
+
+#bienvenidos h1 {
+  font-size: 50px;
+}
+
+#logoMoka{
+  max-width: 240px;
+  max-height: 100;
+  width: auto;
+  height: auto;
+  padding-left: 40px;
+}
+
+.Form_citas {
+    width: 600px;
+    background: #453c38;
+    padding: 50px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: aliceblue;
+    border-radius: 7px;
+}
+
+label {
+  font-size: 24px;
+
+}
+
+.controlador {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 2px solid #f66e00;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+.descripcion {
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #f66e00;
+  font-size: 18px;
+  resize: none;
+}
+
+.calendario {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #453c38;
+  width: 100%;
+  height: 70px;
+  font-size: 30px;
+}
+
+
+.Res_cita {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #453c38;
+  width: 100%;
+  height: 100px;
+  font-size: 45px;
+}
+
+.Boton {
+  color: #453c38;
+  background-color: #f66e00;
+  height: 28px;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 100%;
+  height: 55px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.Cal {
+  text-align: center;
+  animation: alternate;
+  
+}
+
+.Cal input{
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  padding: 10px;
+}
+
+.Cal h1{
+
+  font-size: 25px;
+}
+
+#foot {
+  color: #fff;
+  background-color: #453c38;
+  min-width: 100vw;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.error{
+  border: 2px solid red;
+
+}

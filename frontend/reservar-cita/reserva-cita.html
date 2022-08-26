@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva citas</title>
+    <link rel="stylesheet" href="resets.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<header>
+    <div id="introBlock">
+        <img src="Assets/Artboard 6.png" alt="Logo de la Veterinaria Moka" height="200" id="logoMoka">
+        <div id="bienvenidos">
+        <h1>Bienvenido</h1>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="Res_cita"> 
+        <h1 id="cita">Reserve la cita</h1>
+    </div>
+    <section class="Form_citas" id="formulario">
+
+        <label for="nombres">Nombre de la mascota:</label> <br>
+        <br><input class="controlador" type="text" name="nombre" id="nombres" placeholder="Luna" required>
+
+        <label for="animal">¿Cuál es su especie?:</label> <br>
+        <br><input class="controlador" type="text" name="animal" id="animal" placeholder="Perro, gato, ave, roedor, etc." required>
+
+        <label for="telefono">Ingrese su número de teléfono:</label> <br>
+        <br><input class="controlador" type="text" name="telefono" id="telefono" placeholder="8123-4567" maxlength="9" required>
+
+        <label for="descripcion">Ingrese una breve descripción del motivo de la cita:</label> <br>
+        <br><textarea class="descripcion" name="text" id="descripcion" id="descripcion" placeholder="Luna necesita su chequeo trimestral." required></textarea>
+
+        <div class="calendario">
+            <h1 id="cal_dispo">Calendario</h1>
+        </div>
+        <div class="Cal">
+            <h1>Fecha de ingreso:</h1> <br>
+            <input type="date" id="fecha-cita" required min="2022-08-29" max="2027-12-31">
+
+        </div>
+        <input class="Boton" type="submit" name="Boton" id="Boton" placeholder="Enviar">
+    </section>
+    <footer>
+        <div id="foot">
+        <h6>© Veterinaria Moka 2022 - Todos los derechos reservados.</h6>
+        </div>  
+    
+    </footer>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="reserva-citas-controlador.js"></script>
+
+
+</body>
+</html>

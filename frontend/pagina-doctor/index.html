@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Doctor</title>
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/general.css">
+    <script src="https://kit.fontawesome.com/ea7c845350.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body> 
+    <!-- Seccion Header -->
+    <header>
+        <div id="logo"> 
+            <img src="imagenes/logo moka blanco-01-02.png" alt="Logo de Veterinaria Moka">
+            <div> 
+            <h2 id="bienvenido">Bienvenido,<br>administrador</h2>
+            </div>
+        </div>
+
+    </header>
+    <!-- Seccion Identificacion admin y usuario -->
+
+   
+    <section id="identificacion-cliente">
+        <form id="form-client">
+            <input class="casilla" type="text" name="numero-identificacion2" id="numero-identificacion2" placeholder="Ingrese el número de identificación del cliente">
+            <input id="boton" type="submit" value="Ingresar" href="#">
+        <form>
+    </section>
+
+    <!-- Seccion historial citas -->
+
+    <section id="historial-citas">
+        <h3>Historial de citas</h3>
+            <table id="informacion-registro">
+                <thead>
+                    <tr>
+                        <th>Nombre mascota</th>
+                        <th>Nombre de doctor</th>
+                        <th>Calificacion</th>
+                        <th>Fecha de entrada</th>
+                        <th>Fecha de salida</th>
+                        <th>Observaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table> 
+    </section>
+
+        <!-- Seccion historial pagos -->
+
+    <section id="pagos">
+        <h3 id="titulo-pagos">Métodos de pago</h3>
+            <table id="tabla-metodos">
+                <thead>
+                    <tr>
+                        <th>Nombre del titular</th>
+                        <th>Número de tarjeta</th>
+                        <th>Fecha de expiración</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+    </section>
+
+          <!-- Seccion historial reservaciones -->
+
+    <section id="historial-citas">
+        <h3>Historial de reservaciones</h3>
+            <table id="informacion-registro">
+                <thead>
+                    <tr>
+                        <th>Nombre mascota</th>
+                        <th>Tipo de animal</th>
+                        <th>Numero telefono</th>
+                        <th>Fecha de entrada</th>
+                        <th>Fecha de salida</th>
+                        <th>Cuidados Especiales</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table> 
+    </section>
+
+    <!-- Seccion historial reservaciones -->
+
+        <!-- Seccion historial mascota -->
+
+        <section id="historial-mascotas">
+            <h3>Mascotas</h3>
+                <table id="mascotas-datos-tabla">
+                    <thead>
+                        <tr>
+                            <th>Nombre mascota</th>                            
+                            <th>Alergias</th>
+                            <th>Cuidados</th>
+                            <th>Fecha de Cumpleanos</th>
+                            <th>Direccion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                </table> 
+        </section>
+        <script>
+            const estrella = document.querySelectorAll('.estrella i');
+            const testimonios = document.querySelector('.testimonios');
+    
+            estrella.forEach(function (star) {
+                star.addEventListener('click', function()   {
+                    testimonios.className = `testimonios ${this.id}`
+                })
+            });
+    
+            const estrella2 = document.querySelectorAll('.estrella2 i');
+            const testimonios2 = document.querySelector('.testimonios2');
+    
+            estrella2.forEach(function (star) {
+                star.addEventListener('click', function()   {
+                    testimonios2.className = `testimonios2 ${this.id}`
+                })
+            });
+    
+            const estrella3 = document.querySelectorAll('.estrella3 i');
+            const testimonios3 = document.querySelector('.testimonios3');
+    
+            estrella3.forEach(function (star) {
+                star.addEventListener('click', function()   {
+                    testimonios3.className = `testimonios3 ${this.id}`
+                })
+            });
+    
+            const estrella4 = document.querySelectorAll('.estrella4 i');
+            const testimonios4 = document.querySelector('.testimonios4');
+    
+            estrella4.forEach(function (star) {
+                star.addEventListener('click', function()   {
+                    testimonios4.className = `testimonios4 ${this.id}`
+                })
+            });
+    
+        </script>
+
+        <!-- Seccion informacion cliente -->
+
+    <section id="info-cliente">
+            <h2 id="titulo-informacion">Información del cliente</h2>
+            <div id="cuerpo-info-cliente"> 
+                <div>
+                    <h3>Nombre Completo:</h3>
+                    <p id="userName"> Mauricio Fernandez</p>
+                </div>
+                <div>
+                    <h3>Identificacion:</h3>
+                    <p id="userIdentification"> 70460003</p>
+                </div>
+                <div>
+                    <h3>Correo electrónico:</h3>
+                    <p id="userEmail"> mfernandeza@ucenfotec.ac.cr</p>
+                </div>
+                <div>
+                    <h3>Cantidad de mascotas:</h3>
+                    <p id="userPets"> 0</p>
+                </div>
+                <div>
+                    <h3>Dirección exacta:</h3>
+                    <p id="userAddress">Lorem ipsum dolor, sit um minima, ea eos non, ex nobis officiis provident, exercitationem assumenda? </p>
+                </div>
+            </div>
+
+    </section>
+  <!-- Seccion footer -->
+
+  <footer>
+    <div id="doctor-footer">© Astra 2022 - Todos los derechos reservados.</div> 
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>    
+  <script src="main.js"></script>
+</body>
+  
+
+</html>

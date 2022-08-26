@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de pago</title>
+    <link rel="stylesheet" href="estilos-forma-pago.css">
+</head>
+<body>
+    <section class="cont-formulario">
+        <h1>Agrega un método de pago</h1>
+        <div id="formulario-pago">
+            <label for="nombre-tarjeta">Nombre del titular de la tarjeta:</label>
+            <input type="text" id="nombre-tarjeta" autocomplete="cc-name" placeholder="Juan Pérez" class="caja-input" required>
+
+            <label for="numero-tarjeta">Número de la tarjeta:</label>
+            <input type="tel" inputmode="numeric" id="numero-tarjeta"  maxlength="19" placeholder="XXXX-XXXX-XXXX-XXXX" class="caja-input" required>
+
+            <label for="numero-seguridad">Número de seguridad:</label>
+            <input type="password" name="" autocomplete="cc-csc" id="codigo-seguridad" class="caja-input" placeholder="•••" maxlength="3" required>
+
+            
+            <label for="expiracion">Fecha de expiración de la tarjeta:</label>
+            <div class="expiracion">
+                <select name="mes-expiracion" id="mes-exp" class="input-expiracion" required>
+                    <option value=''>Mes</option>
+                    <option value='1'>Enero</option>
+                    <option value='2'>Febrero</option>
+                    <option value='3'>Marzo</option>
+                    <option value='4'>Abril</option>
+                    <option value='5'>Mayo</option>
+                    <option value='6'>Junio</option>
+                    <option value='7'>Julio</option>
+                    <option value='8'>Agosto</option>
+                    <option value='9'>Septiembre</option>
+                    <option value='10'>Octubre</option>
+                    <option value='11'>Noviembre</option>
+                    <option value='12'>Diciembre</option>
+                </select> 
+
+                <select name='anno-expiracion' id="anno-exp" class="input-expiracion" required>
+                    <option value=''>Año</option>
+                    <option value='2022'>2022</option>
+                    <option value='2023'>2023</option>
+                    <option value='2024'>2024</option>
+                    <option value='2025'>2025</option>
+                    <option value='2026'>2026</option>
+                    <option value='2027'>2027</option>
+                </select> 
+
+             </div>
+
+             <input type="submit" value="Guardar" id="btn-submit" class="boton-submit">
+            
+
+        </div>
+        
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>   
+    <script type="text/javascript" src="controlador-metodo-pago.js"></script>
+
+</body>
+</html>

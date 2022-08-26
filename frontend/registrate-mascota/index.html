@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Registro de Mascota</title>
+</head>
+
+<body>  
+
+<div id="contact-form">
+    <div id="header-form">
+        <h1>¡Registra tu mascota!</h1> 
+        <img src="images/v433_2.png" alt="">
+    </div> 
+    
+            <form action="" id="formulario_registro">
+            <div>
+                <label for="txtnombre" class="form-label">Ingrese el nombre de su mascota:</label> 
+                <input type="text" class="input-text"  placeholder="Manchitas" id="txtnombre" required />
+            </div>
+    
+            <div>
+                <label for="txtalergia" class="form-label">Ingrese si posee alguna alergia:</label>
+                <input type="text" class="input-text" placeholder="Si no posee alergias escriba: NO" id="txtalergia" required />
+            </div>
+    
+            <div>             
+                <label for="txtcuidado" class="form-label">Ingrese si requiere algun cuidado especial:</label>
+                <input type="text" class="input-text" placeholder="Si no posee escriba: NO" id="txtcuidado" required />
+            </div>
+
+            <div>             
+                <label for="txttipo" class="form-label">Seleccione su tipo de mascota:</label> <br>
+                <select name="tipos" id="txttipo" required>
+                    <option value="perro">Seleccione una opción</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="conejo">Conejo</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="perro">Pajaro</option>
+                    <option value="perro">Pez</option>
+                </select>
+            </div>
+
+            <div>             
+                <label for="txtfecha" class="form-label">Ingrese la fecha de nacimiento de su mascota:</label>
+                <input type="date" class="input-text" id="txtfecha" max="2022-08-27" required />
+            </div>
+
+            <div>             
+                <label for="txtdireccion" class="form-label">Ingrese su dirección exacta:</label>
+                <textarea class="input-text" placeholder="Av Central, Francisco Peralta, San José, 10104, Costa Rica." id="txtdireccion" required></textarea> 
+            </div>
+
+            <div>              
+                <button name="button" type="submit" id="btn-registrar" >REGISTRARSE</button> 
+            </div>
+
+            </form>
+      
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>    
+    <script src="js/controlador.js"></script>
+<body> 
+
+</html>    
+

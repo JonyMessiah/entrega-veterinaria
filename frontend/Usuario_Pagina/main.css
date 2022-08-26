@@ -1,0 +1,326 @@
+
+body {
+  font-size: 14px; 
+  margin: 0px;
+  background-color:#EBE9F6
+}
+#encabezado{
+  width: 100%;
+  text-align: center;
+}
+ 
+h1 {
+  color: black;
+  position: absolute;
+  font-weight: Bold;
+  font-size: 75px;
+  position: relative;
+}
+
+#cita-reservar{
+  background-color: #453C38;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cita-reservar-2{
+  border-radius: 10px;
+  background-color: #6A5C55;
+  width: 85%;
+  height: 250px;
+  padding: 30px 50px 30px 50px;
+
+}
+
+
+#cita-reservar-2 img{
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  right: 250px;
+  bottom: 480px;
+}
+
+#cita-reservar-2 p{
+  display: flex;
+  justify-content:start;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+#cita-reservar-2 button{
+  display: flex;
+  justify-content:start;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  background-color:#F66E00;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px 10px 10px;
+}
+
+#titulo-citas{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 0.7s;
+}
+
+#titulo-citas:hover{
+
+  font-size: 50px;
+  color: #f66e00;
+}
+
+#citas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#historial-citas,
+#historial-reservaciones{
+  width: 1200px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+
+}
+
+/* Seccion historial pagos */
+
+#mascotas-datos, #pagos{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #fff;
+  height: 600px;
+  margin: 35px;
+  border: 10px solid #453c38;
+}
+
+#mascotas-datos h3, #pagos h3{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#mascotas-datos-tabla th,
+#tabla-metodos th{
+  width: 400px;
+  font-size: 24px;
+  background-color: #453c38;
+  color: #fff;
+  padding: 30px 15px;
+
+}
+
+#historial-pagos{
+  width: 1900px;
+  height: 400px;
+  background-color: #EBE9F6;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+#titulo-pagos{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 0.7s;
+}
+
+#titulo-pagos:hover{
+
+  font-size: 50px;
+  color: #f66e00;
+}
+/* Seccion historial reservaciones */
+
+#reservaciones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+#titulo-reservaciones{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 0.7s;
+}
+
+#titulo-reservaciones:hover{
+
+  font-size: 50px;
+  color: #f66e00;
+}
+
+#historial-reservaciones{
+  width: 1200px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#historial-citas,
+#historial-reservaciones{    
+    box-sizing: border-box;
+    min-height: 550px;
+    width: auto;
+    margin: 35px;
+    padding: 0px 10px;
+    background-color: white;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 25px;
+    border: 10px solid #453c38;
+}
+
+#historial-citas h3,
+#historial-reservaciones h3{
+    font-size: 60px; color: black; transition: 0.7s; font-weight: bold;
+}
+
+#mascotas-datos-tabla td,
+#tabla-metodos td,
+#informacion-registro td,
+#informacion-registro th {
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 20px;
+}
+
+#informacion-registro tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#informacion-registro tr:hover {
+    background-color: #ddd;
+}
+
+#informacion-registro th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #383737;
+    color: white;
+    width: 150px;
+}
+#informacion-registro tr :nth-child(6){
+    width: 600px;
+}
+
+/* Seccion informacion cliente */
+
+#info-cliente{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 500;
+
+  padding-bottom: 30px;
+} 
+
+#cuerpo-info-cliente{
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 90px;
+  width: 75%;
+  height: 1100px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+#userName, #userPhone, #userEmail, #userPets, #userAddress, #userIdentification{
+  width: 900px;
+  height: 50px;
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color: #6a5c55;
+  border-radius: 15px;
+  color: #fff;
+}
+  
+
+#ff{
+  height: 200px;
+  width: 900px;
+  background-color: #6a5c55;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #fff;
+}
+
+#titulo-informacion{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px 0;
+  transition: 0.7s;
+}
+
+#titulo-informacion:hover{
+
+  font-size: 60px;
+  color: #f66e00;
+}
+
+/* Seccion footer */
+footer{
+background-color: #6A5C55;
+color: #fff;
+height: 100px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 10px;
+}
+
+
+.button {
+  background: rgba(246,110,0,1);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Poppins;
+}

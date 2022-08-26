@@ -1,0 +1,328 @@
+body{
+    background-color: #ebe9f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    width: 1440px;
+    margin: 0px;
+
+}
+
+
+header{
+    color: #fff;
+    margin: 0px auto 0px auto;
+    background-color: #f66e00;
+    width: 100%;
+    height: 100px; 
+
+}
+
+
+/*  Primer bloque / Header de la pagina Secretaria */ 
+
+#pbienvenida{
+    color: #fff;
+    font-size: 27px;
+    margin-left: 70%;
+    margin-top: -50px;
+    
+
+}
+
+#psecretaria{
+    color: #fff;
+    font-size: 27px;
+    margin-left: 70%;
+    margin-top: 10px;
+}
+
+
+#logoMoka{
+    max-width: 100px;
+    max-height: 500;
+    height: auto;
+    width: auto;
+
+}
+
+#logoMoka:hover{
+    max-width: 120px;
+    width: auto;
+    height: auto;
+
+}
+
+
+/*  Segundo bloque / Generacion de formularios por numero de identificacion */ 
+
+
+#Identificacion{
+    background-color: #453c38;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    gap: 115px;
+    margin-bottom: 50px;
+
+}
+#IdentificacionCliente{
+    background-color:#ebe9f6;
+    margin: 60px 400px 0px 400px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 20px;
+
+}
+
+#BotonSubmit{
+    margin-left: 45%;
+    margin-top: 48px;
+    font-size: 30px;
+}
+
+
+/*  <!-- Tercer bloque / Historico de citas --> */ 
+
+#informacion-registro td,
+#informacion-registro th {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+#informacion-registro tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#informacion-registro tr:hover {
+    background-color: #ddd;
+}
+
+#informacion-registro th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #383737;
+    color: white;
+    width: 150px;
+}
+#informacion-registro tr :nth-child(6){
+    width: 600px;
+}
+
+#historial-citas,
+#historial-reservaciones{    
+    box-sizing: border-box;
+    min-height: 550px;
+    width: auto;
+    margin: 35px;
+    padding: 0px 10px;
+    background-color: white;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 25px;
+    border: 10px solid #453c38;
+}
+
+#historial-citas h3,
+#historial-reservaciones h3{
+    font-size: 60px; padding: 5% 0 25px 0; color: black; transition: 0.7s; font-weight: bold;
+}
+
+
+
+#Botones{
+    width: 100%;
+    height: 100px;
+    margin: 0 0 0 0;
+    background-color: #453c38;
+  
+}
+
+#BotonSubmitt{
+    margin-left: 19%;
+    margin-right: 550px;
+    font-size: 28px;
+    margin-top: 30px;
+
+}
+#BotonSubmittt{
+    font-size: 28px;
+
+}
+
+
+
+/*  <!-- Cuarto bloque / Formulario de pagos --> */ 
+#pagos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 600px;
+    margin: 35px;
+    border: 10px solid #453c38;
+}
+
+#pagos h3{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tabla-metodos th{
+    width: 400px;
+    font-size: 24px;
+    background-color: #453c38;
+    color: #fff;
+    padding: 30px 15px;
+
+}
+
+
+#historial-pagos{
+    
+    width: 1000px;
+    height: 400px;
+    background-color: darkgray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+
+
+#BotonSubmitttt{
+    margin-left: 18%;
+    margin-right: 420px;
+    font-size: 28px;
+    margin-top: 30px;
+
+}
+#BotonSubmittttt{
+    font-size: 28px;
+
+}
+
+#Botoness{
+    width: 100%;
+    margin: 0 0 0 0;
+    height: 100px;
+    background-color: #453c38;
+}
+
+
+/*  <!-- Quinto bloque / Listado de reservaciones  --> */ 
+
+#Reservaciones{
+    background-color:darkgrey;
+    font-size: 40px;
+    margin-top:90px;
+    width: 100%;
+
+}
+#Reserva{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: -50px;
+    font-weight: bold;
+
+}
+
+#Reserva:hover{
+    font-size: 48px;
+    font-weight: bold;
+    color: #f66e00;
+    transition: 0.7s;
+
+}
+
+
+/*  Sexto bloque Seccion informacion cliente */
+
+#info-cliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 500;
+    height: 1070px;
+    padding-bottom: 30px;
+} 
+
+#cuerpo-info-cliente{
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 90px;
+    width: 75%;
+    height: 900px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+#cuerpo-info-cliente h3{
+    padding-bottom: 15px;
+}
+
+#f{
+    width: 900px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: #6a5c55;
+    border-radius: 15px;
+    color: #fff;
+}
+    
+
+#ff{
+    height: 200px;
+    width: 900px;
+    background-color: #6a5c55;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+#titulo-informacion{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.7s;
+}
+
+#titulo-informacion:hover{
+
+    font-size: 60px;
+    color: #f66e00;
+}
+
+/*  Septimo bloque / Pie de la pagina  */ 
+
+#foot{
+    color: #fff;
+    background-color: #453c38;
+    width: 1440px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
